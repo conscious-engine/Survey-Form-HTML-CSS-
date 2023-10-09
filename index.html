@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test task survey form</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+<h1 id="title">Test task survey form:</h1>
+<p id="description">we have just a couple of questions for you</p> 
+<fieldset>
+<label for="name" id="name-label"> Enter your name:</label> <input id="name" type="text" style="width: 175px;" placeholder="how do your friends call you?" required> <br>
+<label for="email" id="email-label">Enter your email:</label> <input id="email" type="email" placeholder="what is your gmail login?" style="width: 175px;" required> 
+<br>
+<label for="number" id="number-label"> Enter a number:</label> <input id="number" type="number" style="width: 175;" min="1" max="9" placeholder="pick a number from 1 to 9">
+</fieldset>
+<fieldset>
+<label for="dropdown"> Choose one:
+</label> 
+<select id="dropdown" style="width: 175;" required>
+  <option id="" style="width: 175, color: grey;">choose your weapon</option>
+  <option id="1">swimming noodle</option>
+  <option id="0">noisy whistle</option>
+    </select>
+    </fieldset>
+<fieldset>
+  <label for="it-was-fun-label"> </label>
+  <input name="button" type="radio" value="it-was-fun" id="it-was-fun-label" required> It was fun 
+  </label> <br>
+  <label for="it-sucked-label"> </label> <input name="button" type="radio" value="it-sucked" id="it-sucked-label" required> It sucked
+  </fieldset>
+  <fieldset>
+    <label for="best-form-label"></label> <input name="checkbox" type="checkbox" value="best-form" id="best-form-label"> It is the best form ever! <br>
+    <label for="good-time-label"></label> <input name="checkbox" type="checkbox" value="good-time" id="good-time-label"> I've never had such a good time before!</label> <br>
+   <label for="tip"></label> <input name="checkbox" type="checkbox" value="tip" id="tip-label"> I might even consider giving a tip to the dev!
+  </fieldset>
+  <fieldset>
+    <label for="textarea">Find your place in space:</label> <textarea id="textarea" name="textarea" placeholder="...type a small secret here:" rows="3" required></textarea>
+ <br>
+  </fieldset>
+  <fieldset> <label for="submit"></label> <input id="submit" name="submit" required type="submit">
+    </fieldset>
+  </form>
+</body>
+<footer>
+  <p id="footer">made with love by Anna Martemyanova: <a href="https://www.linkedin.com/in/anna-martemyanova/">LinkedIn</a>, <a href="https://github.com/conscious-engine">GitHub</a></p>
+  </footer>
+</html>
